@@ -1,0 +1,134 @@
+:root {
+    /* Paleta de Colores */
+    --Color-Primario: #3FD0D4;
+    --Color-Primario-Fuerte: #22AEB3;
+    --Color-Primario-Suave: #EEFAFA;
+    --Color-Titulos: #212121;
+    --Color-Texto-Principal: #505050;
+    --Color-Fondo-Secciones: #F7F2EC;
+    --Color-Fondo-Blanco: #FFFFFF;
+    --Color-Bordes: #E8E8E8;
+    --Color-Footer: #272727;
+    --Color-Texto-Navegacion: #5F5F5F;
+
+    /* Tipografias */
+    --fuente1: "Poppins", sans-serif;
+    --fuente2: "Satisfy", cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.padding-xs {
+    padding: 1rem;
+}
+
+.padding-xl {
+    padding: 2rem;
+}
+
+/* Header */
+
+.btn-nav-bar {
+    background-color: var(--Color-Primario);
+    color: var(--Color-Fondo-Blanco);
+    padding: 14px 20px;
+    text-decoration: none;
+    gap: 50%;
+    font-size: 12px;
+    transition: 0.4s ease-in-out;
+}
+
+.btn-nav-bar:hover {
+    background-color: var(--Color-Primario-Fuerte);
+}
+
+.btn-nav-bar i {
+    padding-inline: 14px;
+}
+
+.container {
+    max-width: 70%;
+    margin: auto;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.logo-ancho {
+    width: 200px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    font-family: var(--fuente1);
+    font-size: 14px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: var(--Color-Texto-Navegacion);
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-menu a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--Color-Primario);
+    transition: 0.3s ease-in-out;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+/* Banner */
+
+#banner {
+    width: 100%;
+    height: 90vh;
+    background-image: url("assets/img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.txt-banner {
+    font-family: var(--fuente1);
+}
+
+.txt-banner em {
+    font-family: var(--fuente2);
+    color: #3FD0D4;
+}
+
+.txt-banner span {
+    color: #22AEB3;
+    font-size: 9px;
+}
+
+.txt-banner h1 {
+    font-size: 90px;
+    color: #E8E8E8;
+    font-weight: 400;
+}
