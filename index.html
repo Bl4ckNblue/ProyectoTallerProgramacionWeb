@@ -28,7 +28,7 @@
 <body>
 
     <!-- Cabecera -->
-    <header class="padding-xs">
+    <header id="cabecera" class="padding-xs">
         <!-- Ajustar el ancho del contenido y centrar -->
         <div class="container">
             <!-- Barra de navegación (navbar) / Alineamiento flexible de los elementos -->
@@ -49,7 +49,7 @@
 
                 <!-- Boton Planifica -->
                 <a class="btn-nav-bar" href="#informacion">Planifica tu viaje
-                    <i class="fa-solid fa-arrow-right-long fa-buzz" style="color: rgb(255, 255, 255);"></i>
+                    <i class="fa-solid fa-arrow-right-long " style="color: rgb(255, 255, 255);"></i>
                 </a>
             </div>
         </div>
@@ -59,17 +59,20 @@
     <main>
         <!-- Banner -->
         <section id="banner">
-            <div class="txt-banner">
-                <span>Agencia Local · Peru </span>
-                <h1>Viajes que se quedan <br><em>contigo.</em></h1>
-                <p>Descubre el Perú de una forma auténtica, segura y diseñada completamente a tu medida.</p>
-                <!-- Botones de Accion -->
-                <div>
-                    <a href="">Explorar destinos</a>
-                    <a href="">Conoce nuestra historia</a>
+            <img src="assets/img/banner-gradient.jpg" alt="">
+            <div>
+                <div class="txt-banner">
+                    <span>Agencia Local · Peru </span>
+                    <h1>Viajes que se quedan <br><em>contigo.</em></h1>
+                    <p>Descubre el Perú de una forma auténtica, segura y diseñada completamente a tu medida.</p>
+                    <!-- Botones de Accion -->
+                    <div>
+                        <a href="">Explorar destinos</a>
+                        <a href="">Conoce nuestra historia</a>
+                    </div>
                 </div>
                 <!-- Tarjeta Banner -->
-                <div>
+                <div class="tj-banner">
                     <span>★★★★★</span>
                     <strong>4.9</strong>
                     <p>Más de 15 mil viajeros confiaron en nosotros</p>
@@ -78,26 +81,33 @@
         </section>
 
         <!-- Destinos -->
-        <section>
+        <section id="destinos" class="padding-xl">
             <!-- Ajuste Ancho y Centrar -->
-            <div>
+            <div class="container">
                 <!-- Cabecera Destinos -->
-                <div>
+                <div class="destinos-flex">
                     <!-- Titulo Destinos-->
-                    <div>
-                        <span>Lugares Para Recordar</span>
-                        <h2>Destinos y Paquetes</h2>
+                    <div class="titulo">
+                        <div>
+                            <span>Lugares Para Recordar</span>
+                            <h2>Destinos y Paquetes</h2>
+                        </div>
                     </div>
-                    <p>De los Andes a la Amazonía. Encuentra el escenario ideal para tu próxima gran historia.</p>
+                    <div class="subtitulo">
+                        <p>De los Andes a la Amazonía. Encuentra el escenario ideal para tu <br>próxima gran historia.</p>
+                    </div>
                 </div>
 
+
                 <!-- Tarjetas Destinos -->
-                <div>
+                <div class="tarjetas-destinos flex">
                     <!-- Destino Cuzco -->
                     <article>
-                        <div>
-                            <img src="" alt="">
-                            <span>Historia</span>
+                        <div class="tarjeta">
+                            <img src="assets/img/Machu picchu.jpg" alt="">
+                            <div>
+                                <span>Historia</span>
+                            </div>
                         </div>
                         <div>
                             <h3>Cusco y Machu Picchu</h3>
@@ -109,7 +119,7 @@
                     <!-- Destino Huaraz -->
                     <article>
                         <div>
-                            <img src="" alt="">
+                            <img src="assets/img/Huaraz.jpg" alt="">
                             <span>Aventura</span>
                         </div>
                         <div>
@@ -122,7 +132,7 @@
                     <!-- Destino Paracas -->
                     <article>
                         <div>
-                            <img src="" alt="">
+                            <img src="assets/img/Paracas.jpg" alt="">
                             <span>Naturaleza</span>
                         </div>
                         <div>
@@ -135,7 +145,7 @@
                     <!-- Destino Amazonas -->
                     <article>
                         <div>
-                            <img src="" alt="">
+                            <img src="assets/img/Amazonas.jpg" alt="">
                             <span>Descubrimiento</span>
                         </div>
                         <div>
@@ -150,31 +160,33 @@
         </section>
 
         <!-- Datos -->
-        <section>
-            <div>
+        <section id="datos">
+            <div class="container">
                 <div>
-                    <strong>12</strong>
-                    <span>Años de experiencia</span>
-                </div>
-                <div>
-                    <strong>40+</strong>
-                    <span>Destinos en el país</span>
-                </div>
-                <div>
-                    <strong>15k</strong>
-                    <span>Viajeros felices</span>
-                </div>
-                <div>
-                    <strong>98%</strong>
-                    <span>Clientes satisfechos</span>
+                    <div>
+                        <strong>12</strong>
+                        <span>Años de experiencia</span>
+                    </div>
+                    <div>
+                        <strong>40+</strong>
+                        <span>Destinos en el país</span>
+                    </div>
+                    <div>
+                        <strong>15k</strong>
+                        <span>Viajeros felices</span>
+                    </div>
+                    <div>
+                        <strong>98%</strong>
+                        <span>Clientes satisfechos</span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Nosotros -->
-        <section>
+        <section id="nosotros">
             <!-- Ajustar ancho y centrar -->
-            <div>
+            <div class="container">
                 <!-- Alineamiento flexible de los elementos -->
                 <div>
                     <!-- Imagen -->
@@ -182,50 +194,49 @@
                         <img src="" alt="">
                         <!-- Tarjeta Nosotros -->
                         <div>
-                            <strong>12 años creando <br>historias</strong>
+                            <strong>12</strong>
+                            <span>años creando <br>historias</span>
                         </div>
                     </div>
                     <!-- Leyenda -->
                     <div>
-                        <!-- Titulo -->
+                        <span>Nuestra Escencia</span>
+                        <h2>Sobre nosotros</h2>
+
+                        <p>No solo organizamos viajes. Creamos encuentros genuinos con el Perú y su gente.</p>
+                        <p>Somos una agencia local especializada en experiencias únicas. Combinamos conocimiento, atención personalizada e itinerarios flexibles para que viajes con calma y seguridad.</p>
+
                         <div>
-                            <span>Nuestra Escencia</span>
-                            <h2>Sobre nosotros</h2>
-                        </div>
-                        <!-- Contenido -->
-                        <div>
-                            <p>No solo organizamos viajes. Creamos encuentros genuinos con el Perú y su gente.</p>
-                            <p>Somos una agencia local especializada en experiencias únicas. Combinamos conocimiento, atención personalizada e itinerarios flexibles para que viajes con calma y seguridad.</p>
                             <div>
-                                <span>
-                                    <p>01</p> Expertos locales
-                                </span>
-                                <span>
-                                    <p>02</p> Viajes a medida
-                                </span>
-                                <span>
-                                    <p>03</p> Turismo responsable
-                                </span>
+                                <span>01</span> Expertos <br>locales
+                            </div>
+                            <div>
+                                <span>02</span> Viajes a <br>medida
+                            </div>
+                            <div>
+                                <span>03</span> Turismo <br>responsable
                             </div>
                         </div>
                         <a href="#">Conocenos mejor
                             <i class="fa-solid fa-arrow-right-long" style="color: rgb(184, 11, 11);"></i>
                         </a>
                     </div>
+
                 </div>
             </div>
         </section>
 
         <!-- Servicios -->
-        <section>
+        <section id="servicios">
             <!-- Ajustar ancho y centrar -->
-            <div>
+            <div class="container">
                 <!-- Titulo -->
                 <div>
                     <span>Todo bajo control</span>
                     <h2>Nuestros servicios</h2>
+                    <p>Nos ocupamos de cada detalle para que tú solo te ocupes de disfrutar.</p>
                 </div>
-                <span>Nos ocupamos de cada detalle para que tú solo te ocupes de disfrutar.</span>
+
                 <!-- Tarjeta Servicios -->
                 <div>
                     <article>
@@ -260,9 +271,9 @@
         </section>
 
         <!-- Paquetes -->
-        <section>
+        <section id="paquetes">
             <!-- Ajustar ancho y centrar -->
-            <div>
+            <div class="container">
                 <!-- Cabecera Paquetes (Flex) -->
                 <div>
                     <div>
@@ -315,9 +326,9 @@
         </section>
 
         <!-- Testimonios -->
-        <section>
+        <section id="testimonios">
             <!-- Ajustar ancho y centrar -->
-            <div>
+            <div class="container">
                 <!-- Titulo -->
                 <div>
                     <span>Historias reales</span>
@@ -354,9 +365,9 @@
         </section>
 
         <!-- Equipo -->
-        <section>
+        <section id="equipo">
             <!-- Ajustar ancho y centrar -->
-            <div>
+            <div class="container">
                 <!-- Cabecera Equipo (Flex) -->
                 <div>
                     <div>
@@ -411,16 +422,16 @@
         <!-- Informacion -->
         <section id="informacion">
             <!-- Ajustar ancho y centrar -->
-            <div>
+            <div class="container">
                 <!-- flex -->
-                <div>
+                <div class="informacion-flex">
                     <!-- Texto -->
-                    <div>
+                    <div class="info-titulo">
                         <span>Diseñemos tu aventura</span>
-                        <h2>Tu viaje empieza aquí.</h2>
-                        <p>Cuéntanos qué imaginas. Un asesor local preparará una propuesta personalizada en menos de 24 horas.</p>
+                        <h2>Tu viaje <br>empieza aquí.</h2>
+                        <p>Cuéntanos qué imaginas. Un asesor local preparará una<br> propuesta personalizada en menos de 24 horas.</p>
                         <!-- flex 2 -->
-                        <div>
+                        <div class="informacion-flex">
                             <div>
                                 <span>Escríbenos</span>
                                 <p>viajesperu@gmail.com</p>
@@ -432,10 +443,11 @@
                         </div>
                     </div>
 
+
                     <!-- Formulario -->
-                    <div>
+                    <div class="info-form">
                         <span>En solo 2 minutos</span>
-                        <h2>Cuéntanos sobre tu viaje</h2>
+                        <h3>Cuéntanos sobre tu viaje</h3>
                         <!-- Objeto formulario -->
                         <form action="grabar-cita.php" method="post">
                             <!-- Caja flexbox -->
@@ -501,20 +513,26 @@
     </main>
 
     <!-- Pie de Página -->
-    <footer>
+    <footer id="pie" class="padding-xs">
         <!-- Ajustar ancho y centrar -->
-        <section>
+        <section class="container">
             <!-- Superior Flex-->
-            <div>
-                <a href=""></a>
-                <p>Experiencias auténticas, <br>recuerdos para siempre.</p>
+            <div class="footer-flex1">
                 <div>
-                    <span>Siguenos</span>
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="">
+                        <img src="assets/img/image.png" alt="">
+                    </a>
                 </div>
-                <div>
+                <div class="slogan">
+                    <p>Experiencias auténticas, <br>recuerdos para siempre.</p>
+                </div>
+                <div class="col-flex">
+                    <span>Siguenos</span>
+                    <a href=""><i class="fa-brands fa-facebook"></i> </a>
+                    <a href=""><i class="fa-brands fa-instagram"></i> </a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i> </a>
+                </div>
+                <div class="col-flex">
                     <span>Explora</span>
                     <a href="">Destinos</a>
                     <a href="">Nosotros</a>
@@ -522,8 +540,9 @@
                 </div>
             </div>
 
+            <hr class="linea">
             <!-- Inferior Flex-->
-            <div>
+            <div class="footer-flex2">
                 <p>&copy; 2026 - ViajaPerú. Todos los derechos reservados.</p>
                 <p>Turismo responsable · Hecho con calma en Perú</p>
             </div>

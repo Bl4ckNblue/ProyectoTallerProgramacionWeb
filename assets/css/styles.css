@@ -2,14 +2,24 @@
     /* Paleta de Colores */
     --Color-Primario: #3FD0D4;
     --Color-Primario-Fuerte: #22AEB3;
-    --Color-Primario-Suave: #EEFAFA;
+    --Color-Texto-Navegacion: #5F5F5F;
+
+    /* Colores de texto */
     --Color-Titulos: #212121;
     --Color-Texto-Principal: #505050;
-    --Color-Fondo-Secciones: #F7F2EC;
+    --Color-Texto-Secundario: #777777;
+    --Color-Texto-Claro: #FFFFFF;
+
+    /* Fondos */
     --Color-Fondo-Blanco: #FFFFFF;
-    --Color-Bordes: #E8E8E8;
+    --Color-Fondo-Claro: #F7F2EC;
+    --Color-Primario-Suave: #EEFAFA;
+    --Color-Primario-Oscuro: #505050;
     --Color-Footer: #272727;
-    --Color-Texto-Navegacion: #5F5F5F;
+
+    /* Bordes */
+    --Color-Bordes: #E8E8E8;
+    --Color-Bordes-Oscuro: #DDDDDD;
 
     /* Tipografias */
     --fuente1: "Poppins", sans-serif;
@@ -22,6 +32,31 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: var(--fuente1);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-size: 57px;
+    font-family: var(--fuente1);
+    font-weight: 400;
+}
+
+span {
+    color: var(--Color-Primario);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
 .padding-xs {
     padding: 1rem;
 }
@@ -30,7 +65,67 @@
     padding: 2rem;
 }
 
-/* Header */
+.container {
+    max-width: 70%;
+    margin: auto;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.logo-ancho {
+    width: 200px;
+}
+
+/* Selectores ID */
+#cabecera {
+    position: sticky;
+    top: 0;
+    background-color: var(--Color-Fondo-Blanco);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    z-index: 1000;
+}
+
+#banner {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+#banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#destinos {}
+
+#datos {}
+
+#nosotros {}
+
+#servicios {}
+
+#paquetes {}
+
+#testimonios {}
+
+#equipo {}
+
+#informacion {
+    background-color: var(--Color-Texto-Principal);
+}
+
+
+#pie {
+    background-color: var(--Color-Footer);
+    color: var(--Color-Texto-Navegacion);
+}
+
+/* Selectores Class */
 
 .btn-nav-bar {
     background-color: var(--Color-Primario);
@@ -48,20 +143,6 @@
 
 .btn-nav-bar i {
     padding-inline: 14px;
-}
-
-.container {
-    max-width: 70%;
-    margin: auto;
-}
-
-.img-fluid {
-    width: 100%;
-    height: auto;
-}
-
-.logo-ancho {
-    width: 200px;
 }
 
 .nav-bar {
@@ -101,20 +182,28 @@
     width: 100%;
 }
 
-/* Banner */
 
-#banner {
-    width: 100%;
-    height: 90vh;
-    background-image: url("assets/img/banner.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+
+
+
+.informacion-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
-
 
 .txt-banner {
     font-family: var(--fuente1);
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    width: 500px;
+    z-index: 2;
 }
 
 .txt-banner em {
@@ -122,13 +211,135 @@
     color: #3FD0D4;
 }
 
-.txt-banner span {
-    color: #22AEB3;
-    font-size: 9px;
-}
-
 .txt-banner h1 {
     font-size: 90px;
     color: #E8E8E8;
     font-weight: 400;
+}
+
+.tj-banner {
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    z-index: 2;
+}
+
+/* Destinos */
+
+
+.destinos-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subtitulo {
+    font-family: var(--fuente1);
+    color: var(--Color-Texto-Navegacion);
+    font-size: 12px;
+}
+
+.tarjetas-destinos img {
+    width: 240px;
+    height: 330px;
+}
+
+.tarjeta {
+    position: relative;
+}
+
+.tarjeta span {
+    position: absolute;
+    top: 1px;
+    right: 0px;
+}
+
+
+.logo-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.info-titulo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.info-titulo h2 {
+    color: var(--Color-Fondo-Blanco);
+}
+
+.info-titulo p {
+    color: var(--Color-Texto-Navegacion);
+}
+
+.info-form {
+    background-color: var(--Color-Fondo-Blanco);
+}
+
+
+
+/* Footer */
+
+.footer-flex1 img {
+    width: 200px;
+}
+
+.col-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slogan {
+    color: var(--Color-Fondo-Blanco);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.linea {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    width: 100%;
+    margin: 16px auto 12px auto;
+}
+
+.footer-flex2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.footer-flex2 p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.footer-flex1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-flex1 a {
+    text-decoration: none;
+    color: var(--Color-Texto-Navegacion);
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+}
+
+.footer-flex1 a:hover {
+    color: var(--Color-Primario-Suave);
 }
