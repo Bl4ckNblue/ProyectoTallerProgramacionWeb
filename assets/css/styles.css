@@ -182,6 +182,65 @@ span {
     width: 100%;
 }
 
+.txt-banner {
+    font-family: var(--fuente1);
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    width: 520px;
+    z-index: 2;
+}
+
+.txt-banner em {
+    font-family: var(--fuente2);
+    color: #3FD0D4;
+}
+
+.txt-banner h1 {
+    font-size: 90px;
+    color: #E8E8E8;
+    font-weight: 400;
+}
+
+.txt-banner p {
+    color: var(--Color-Texto-Claro);
+    font-weight: 300;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.banner-btn {
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+}
+
+.banner-btn a {
+    text-decoration: none;
+    color: var(--Color-Texto-Claro);
+    gap: 10px;
+}
+
+.banner-btn1 {
+    display: inline-block;
+    background-color: var(--Color-Primario);
+    padding: 10px 20px;
+}
+
+.banner-btn2 {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.tj-banner {
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    z-index: 2;
+}
+
+
 
 
 
@@ -197,32 +256,8 @@ span {
     padding-bottom: 60px;
 }
 
-.txt-banner {
-    font-family: var(--fuente1);
-    position: absolute;
-    top: 40px;
-    left: 100px;
-    width: 500px;
-    z-index: 2;
-}
 
-.txt-banner em {
-    font-family: var(--fuente2);
-    color: #3FD0D4;
-}
 
-.txt-banner h1 {
-    font-size: 90px;
-    color: #E8E8E8;
-    font-weight: 400;
-}
-
-.tj-banner {
-    position: absolute;
-    bottom: 0px;
-    right: 30px;
-    z-index: 2;
-}
 
 /* Destinos */
 
