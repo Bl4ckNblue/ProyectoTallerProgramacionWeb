@@ -23,9 +23,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="assets/img/fav-icon-viaja.jpg" type="image/x-icon">
 </head>
 
 <body>
+    <!-- Top-bar -->
+    <header id="top-bar">
+        <div class="container">
+            <!-- Flexbox del Top-bar -->
+            <div class="top-bar-flex">
+                <!-- Contactos -->
+                <div class="top-contacto">
+                    <!-- Telefono -->
+                    <a href="tel:+51999888761">
+                        <i class="fa-solid fa-phone"></i>+51 999 888 761
+                    </a>
+                    <!-- Correo -->
+                    <a href="mailto:viajesperu@gmail.com">viajesperu@gmail.com</a>
+                    </a>
+                </div>
+                <!-- Redes Sociales -->
+                <div class="top-rs">
+                    <a target="_blank" href="https://facebook.com/utp.peru">
+                        <i class="fa-brands fa-facebook fa-xl"></i>
+                    </a>
+                    <a target="_blank" href="https://instagram.com">
+                        <i class="fa-brands fa-instagram fa-xl"></i>
+                    </a>
+                    <a target="_blank" href="https://api.whatsapp.com/send/?phone=51905435005&text=Hola, necesito información sobre sus servicios">
+                        <i class="fa-brands fa-whatsapp fa-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <!-- Cabecera -->
     <header id="cabecera" class="padding-xs">
@@ -35,16 +66,18 @@
             <div class="nav-bar">
                 <!-- Logo -->
                 <div class="logo-ancho">
-                    <img class="img-fluid" src="assets/img/logo-viaja.jpg" alt="Logo Viaja Peru">
+                    <a href="index.html" title="logo_viajaperu">
+                        <img class="img-fluid" src="assets/img/logo-viaja.jpg" alt="Logo Viaja Peru">
+                    </a>
                 </div>
 
                 <!-- Menu de navegacion -->
                 <nav class="nav-menu">
-                    <a href="#">Inicio</a>
-                    <a href="#">Destinos</a>
-                    <a href="#">Nosotros</a>
-                    <a href="#">Servicios</a>
-                    <a href="#">Equipo</a>
+                    <a href="#cabecera">Inicio</a>
+                    <a href="#destinos">Destinos</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#equipo">Equipo</a>
                 </nav>
 
                 <!-- Boton Planifica -->
@@ -87,7 +120,7 @@
             <!-- Ajuste Ancho y Centrar -->
             <div class="container">
                 <!-- Cabecera Destinos -->
-                <div class="destinos-flex">
+                <div class="titulo-flex">
                     <!-- Titulo Destinos-->
                     <div class="titulo">
                         <div>
@@ -106,7 +139,7 @@
                     <!-- Destino Cuzco -->
                     <article>
                         <div class="tarjeta">
-                            <img src="assets/img/Machu picchu.jpg" alt="">
+                            <img src="assets/img/machu-picchu.jpg" alt="">
                             <div class="tarjeta-txt">
                                 <span>Historia</span>
                             </div>
@@ -121,7 +154,7 @@
                     <!-- Destino Huaraz -->
                     <article>
                         <div class="tarjeta">
-                            <img src="assets/img/Huaraz.jpg" alt="">
+                            <img src="assets/img/huaraz.jpg" alt="">
                             <div class="tarjeta-txt">
                                 <span>Aventura</span>
                             </div>
@@ -136,7 +169,7 @@
                     <!-- Destino Paracas -->
                     <article>
                         <div class="tarjeta">
-                            <img src="assets/img/Paracas.jpg" alt="">
+                            <img src="assets/img/paracas.jpg" alt="">
                             <div class="tarjeta-txt">
                                 <span>Naturaleza</span>
                             </div>
@@ -151,7 +184,7 @@
                     <!-- Destino Amazonas -->
                     <article>
                         <div class="tarjeta">
-                            <img src="assets/img/Amazonas.jpg" alt="">
+                            <img src="assets/img/amazonas.jpg" alt="">
                             <div class="tarjeta-txt">
                                 <span>Descubrimiento</span>
                             </div>
@@ -199,7 +232,9 @@
                 <div class="nosotros-flex">
                     <!-- Imagen -->
                     <div class="nosotros-photo">
-                        <img src="assets/img/Nosotros.jpg" alt="">
+                        <video autoplay muted loop>
+                            <source src="assets/img/nosostros.mp4" type="video/mp4">
+                        </video>
                         <!-- Tarjeta Nosotros -->
                         <div class="nosotros-txt">
                             <strong>12</strong>
@@ -207,7 +242,7 @@
                         </div>
                     </div>
                     <!-- Leyenda -->
-                    <div class="leyenda">
+                    <div class="titulo-centrado">
                         <span>— Nuestra Escencia</span>
                         <h2>Sobre nosotros</h2>
 
@@ -225,7 +260,7 @@
                                 <span>03</span> Turismo responsable
                             </div>
                         </div>
-                        <a href="#">Conocenos mejor
+                        <a href="#informacion">Conocenos mejor
                             <i class="fa-solid fa-arrow-right-long" style="color: rgb(255, 255, 255);"></i>
                         </a>
                     </div>
@@ -239,40 +274,37 @@
             <!-- Ajustar ancho y centrar -->
             <div class="container">
                 <!-- Titulo -->
-                <div>
-                    <span>Todo bajo control</span>
+                <div class="titulo-centrado">
+                    <span>— Todo bajo control</span>
                     <h2>Nuestros servicios</h2>
                     <p>Nos ocupamos de cada detalle para que tú solo te ocupes de disfrutar.</p>
                 </div>
 
                 <!-- Tarjeta Servicios -->
-                <div>
+                <div class="servicios-flex">
                     <article>
-                        <div>
-                            <img src="" alt="">
+                        <div class="servicio-tarjeta">
+                            <img src="assets/img/guias.jpg" alt="">
                             <span>01</span>
                         </div>
                         <h3>Guías certificados</h3>
                         <p>Profesionales bilingües expertos en historia y cultura local que te acompañan con total seguridad.</p>
-                        <a href=""><i class="fa-solid fa-arrow-right-long"></i></a>
                     </article>
                     <article>
-                        <div>
-                            <img src="" alt="">
+                        <div class="servicio-tarjeta">
+                            <img src="assets/img/hoteles.jpg" alt="">
                             <span>02</span>
                         </div>
                         <h3>Hoteles seleccionados</h3>
                         <p>Alojamientos elegidos por su alta calidad, calidez y excelente ubicación en cada destino.</p>
-                        <a href=""><i class="fa-solid fa-arrow-right-long"></i></a>
                     </article>
                     <article>
-                        <div>
-                            <img src="" alt="">
+                        <div class="servicio-tarjeta">
+                            <img src="assets/img/traslados.jpg" alt="">
                             <span>03</span>
                         </div>
                         <h3>Traslados coordinados</h3>
                         <p>Movilidad privada y puntual para que disfrutes cada tramo de tu recorrido sin preocupaciones.</p>
-                        <a href=""><i class="fa-solid fa-arrow-right-long"></i></a>
                     </article>
                 </div>
             </div>
@@ -283,12 +315,14 @@
             <!-- Ajustar ancho y centrar -->
             <div class="container">
                 <!-- Cabecera Paquetes (Flex) -->
-                <div>
-                    <div>
-                        <span>Compara y elige</span>
+                <div class="titulo-flex">
+                    <div class="titulo">
+                        <span>— Compara y elige</span>
                         <h2>Tu punto de partida</h2>
                     </div>
-                    <p>Precios referenciales por persona. Cada itinerario puede adaptarse a tus fechas y ritmo.</p>
+                    <div class="subtitulo">
+                        <p>Precios referenciales por persona. Cada itinerario puede adaptarse a tus fechas y ritmo.</p>
+                    </div>
                 </div>
 
                 <!-- Objeto Tabla -->
@@ -306,25 +340,25 @@
                     <!-- Cuerpo de Tabla -->
                     <tbody>
                         <tr>
-                            <td><span>01</span> Cusco esencial</td>
+                            <td><span>1</span> Cusco esencial</td>
                             <td>4 dias / 3 noches</td>
                             <td>Hotel + Machu Picchu + traslados</td>
                             <td>S/. 1,840</td>
-                            <td><a href=""><i class="fa-solid fa-arrow-right-long"></i></a></td>
+                            <td><a href="#informacion"><i class="fa-solid fa-arrow-right-long fa-2xs"></i></a></td>
                         </tr>
                         <tr>
-                            <td><span>02</span> Paracas & oasis</td>
+                            <td><span>2</span> Paracas & oasis</td>
                             <td>3 días / 2 noches</td>
                             <td>Hotel + Ballestas + buggy</td>
                             <td>S/. 980</td>
-                            <td><a href=""><i class="fa-solid fa-arrow-right-long"></i></a></td>
+                            <td><a href="#informacion"><i class="fa-solid fa-arrow-right-long fa-2xs"></i></a></td>
                         </tr>
                         <tr>
-                            <td><span>03</span> Amazonas mágico</td>
+                            <td><span>3</span> Amazonas mágico</td>
                             <td>5 días / 4 noches</td>
                             <td>Hotel + Gocta + guía privado</td>
                             <td>S/. 1,520</td>
-                            <td><a href=""><i class="fa-solid fa-arrow-right-long"></i></a></td>
+                            <td><a href="#informacion"><i class="fa-solid fa-arrow-right-long fa-2xs"></i></a></td>
                         </tr>
                     </tbody>
 
@@ -338,33 +372,33 @@
             <!-- Ajustar ancho y centrar -->
             <div class="container">
                 <!-- Titulo -->
-                <div>
-                    <span>Historias reales</span>
+                <div class="titulo-centrado">
+                    <span>— Historias reales</span>
                     <h2>Viajeros que ya volvieron</h2>
                 </div>
                 <!-- Tarjetas Testimonios -->
-                <div>
+                <div class="testimonios-flex">
                     <article>
-                        <span>‘‘</span>
+                        <small>‘‘</small>
                         <p>Nuestra experiencia superó todas las expectativas. Cusco fue perfecto, todo organizado y nuestro guía conocía cada detalle de la historia inca.</p>
                         <div>
-                            <strong>Maria Lopez</strong>
+                            <strong>Maria Lopez <br></strong>
                             <span>Lima · Cusco</span>
                         </div>
                     </article>
                     <article>
-                        <span>‘‘</span>
+                        <small>‘‘</small>
                         <p>Un servicio de primera categoría. Desde la reserva hasta el regreso nos sentimos acompañados, seguros y libres de disfrutar.</p>
                         <div>
-                            <strong>Lucia Torres</strong>
+                            <strong>Lucia Torres <br></strong>
                             <span>Trujillo · Amazonas</span>
                         </div>
                     </article>
                     <article>
-                        <span>‘‘</span>
+                        <small>‘‘</small>
                         <p>Las recomendaciones hicieron que conociéramos lugares que nunca habríamos encontrado solos. Volveríamos a viajar con ellos.</p>
                         <div>
-                            <strong>Carlos Rojas</strong>
+                            <strong>Carlos Rojas <br></strong>
                             <span>Arequipa · Paracas</span>
                         </div>
                     </article>
@@ -377,47 +411,50 @@
             <!-- Ajustar ancho y centrar -->
             <div class="container">
                 <!-- Cabecera Equipo (Flex) -->
-                <div>
-                    <div>
-                        <span>Personas que inspiran</span>
+                <div class="titulo-flex">
+                    <div class="titulo">
+                        <span>— Personas que inspiran</span>
                         <h2>Nuestro equipo</h2>
                     </div>
-                    <p>Conocemos el Perú porque lo vivimos. Nuestro equipo está aquí para compartirlo contigo.</p>
+                    <div class="subtitulo">
+                        <small>Conocemos el Perú porque lo vivimos. Nuestro equipo está aquí <br> para compartirlo contigo.
+                        </small>
+                    </div>
                 </div>
 
                 <!-- Tarjeta Equipo -->
-                <div>
+                <div class="tarjeta-equipo-flex">
                     <article>
-                        <div>
-                            <img src="" alt="">
-                            <div>
+                        <div class="tarjeta">
+                            <img src="assets/img/ana-ramirez.jpg" alt="">
+                            <div class="equipo-tarjeta-txt">
                                 <h3>Ana Ramírez</h3>
                                 <p>Gerente de operaciones</p>
                             </div>
                         </div>
                     </article>
                     <article>
-                        <div>
-                            <img src="" alt="">
-                            <div>
+                        <div class="tarjeta">
+                            <img src="assets/img/jorge-paredes.jpg" alt="">
+                            <div class="equipo-tarjeta-txt">
                                 <h3>Jorge Paredes</h3>
                                 <p>Guía principal</p>
                             </div>
                         </div>
                     </article>
                     <article>
-                        <div>
-                            <img src="" alt="">
-                            <div>
+                        <div class="tarjeta">
+                            <img src="assets/img/rosa-flores.jpg" alt="">
+                            <div class="equipo-tarjeta-txt">
                                 <h3>Rosa Flores</h3>
                                 <p>Asesora de viajes</p>
                             </div>
                         </div>
                     </article>
                     <article>
-                        <div>
-                            <img src="" alt="">
-                            <div>
+                        <div class="tarjeta">
+                            <img src="assets/img/diego-nunez.jpg" alt="">
+                            <div class="equipo-tarjeta-txt">
                                 <h3>Diego Núñez</h3>
                                 <p>Especialista en turismo</p>
                             </div>
@@ -428,25 +465,25 @@
         </section>
 
         <!-- Informacion -->
-        <section id="informacion">
+        <section id="informacion" class="padding-xl">
             <!-- Ajustar ancho y centrar -->
             <div class="container">
                 <!-- flex -->
                 <div class="informacion-flex">
                     <!-- Texto -->
                     <div class="info-titulo">
-                        <span>Diseñemos tu aventura</span>
+                        <span>— Diseñemos tu aventura</span>
                         <h2>Tu viaje <br>empieza aquí.</h2>
                         <p>Cuéntanos qué imaginas. Un asesor local preparará una<br> propuesta personalizada en menos de 24 horas.</p>
                         <!-- flex 2 -->
-                        <div class="informacion-flex">
+                        <div class="info-contacto">
                             <div>
-                                <span>Escríbenos</span>
-                                <p>viajesperu@gmail.com</p>
+                                <span>Escríbenos<br></span>
+                                <a href="mailto:viajesperu@gmail.com">viajesperu@gmail.com</a>
                             </div>
                             <div>
-                                <span>Llámanos</span>
-                                <p>+51 999 888 761</p>
+                                <span>Llámanos<br></span>
+                                <a href="tel:+51999888761">+51 999 888 761</a>
                             </div>
                         </div>
                     </div>
@@ -454,7 +491,6 @@
 
                     <!-- Formulario -->
                     <div class="info-form">
-                        <span>En solo 2 minutos</span>
                         <h3>Cuéntanos sobre tu viaje</h3>
                         <!-- Objeto formulario -->
                         <form action="grabar-cita.php" method="post">
@@ -496,20 +532,20 @@
 
                                 <!-- Campo Personas -->
                                 <div class="form-col-100">
-                                    <label for="#personas">Personas</label>
-                                    <input type="number" min="1" max="10" value="1">
+                                    <label for="personas">Personas</label>
+                                    <input class="form-control" type="number" min="1" max="10" value="1">
                                 </div>
 
                                 <!-- Campo Mensaje -->
                                 <div class="form-col-100">
                                     <label for="">¿Cómo imaginas tu viaje?<br></label>
-                                    <textarea class="form-control form-noresize" placeholder="Déjenos su mensaje" required cols="40" rows="6"></textarea>
+                                    <textarea class="form-control form-noresize" placeholder="Déjenos su mensaje" required cols="40" rows="3"></textarea>
                                 </div>
 
                                 <!-- Botón Enviar mensaje -->
                                 <div class="form-col-100">
-                                    <button class="form-submit" type="submit">Recibir mi propuesta</button>
-                                    <span><br>Tus datos están protegidos · Sin pagos ahora</span>
+                                    <button class="form-submit" type="submit">Recibir mi propuesta <i class="fa-sharp fa-solid fa-arrow-up-long fa-rotate-90"></i></button>
+                                    <p>Tus datos están protegidos · Sin pagos ahora</p>
                                 </div>
                             </div>
                         </form>
@@ -527,7 +563,7 @@
             <!-- Superior Flex-->
             <div class="footer-flex1">
                 <div>
-                    <a href="">
+                    <a href="index.html">
                         <img src="assets/img/image.png" alt="">
                     </a>
                 </div>
@@ -536,15 +572,15 @@
                 </div>
                 <div class="col-flex">
                     <span>Siguenos</span>
-                    <a href=""><i class="fa-brands fa-facebook"></i> </a>
-                    <a href=""><i class="fa-brands fa-instagram"></i> </a>
-                    <a href=""><i class="fa-brands fa-whatsapp"></i> </a>
+                    <a target="_blank" href="https://www.facebook.com/PhillipChuJoy"><i class="fab fa-facebook fa-lg"></i> </a>
+                    <a target="_blank" href="https://www.instagram.com/phillipchujoi/"><i class="fab fa-instagram fa-lg"></i> </a>
+                    <a target="_blank" href="https://wa.me/51999888761?text=Hola%2C%20quiero%20reservar%20un%20viaje"><i class="fab fa-whatsapp fa-lg"></i> </a>
                 </div>
                 <div class="col-flex">
                     <span>Explora</span>
-                    <a href="">Destinos</a>
-                    <a href="">Nosotros</a>
-                    <a href="">Servicios</a>
+                    <a href="#destinos">Destinos</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#servicios">Servicios</a>
                 </div>
             </div>
 
