@@ -233,6 +233,11 @@ h3 {
     padding-bottom: 140px;
 }
 
+#turismo {
+    background-color: var(--Color-Primario-Fuerte);
+    color: var(--Color-Texto-Claro);
+}
+
 #informacion {
     background-color: var(--Color-Texto-Principal);
 }
@@ -707,6 +712,33 @@ h3 {
     color: var(--Color-Primario);
 }
 
+/* Turismo */
+
+.turismo-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    padding: 40px 20px;
+}
+
+.turismo-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.turismo-txt a {
+    text-decoration: underline;
+    padding-top: 20px;
+    color: var(--Color-Texto-Claro);
+}
+
+.turismo-video {
+    aspect-ratio: 16/9;
+}
+
 /* Informacion */
 
 .informacion-flex {
@@ -924,4 +956,27 @@ h3 {
     display: flex;
     flex-direction: row;
     gap: 25px;
+}
+
+/* scroll-up */
+.btn-subir {
+    position: fixed;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    bottom: 25px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--Color-Primario);
+    color: var(--Color-Texto-Claro);
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.btn-subir:hover {
+    transform: scale(1.12);
+    background-color: var(--Color-Primario-Fuerte);
+    color: var(--Color-Fondo-Claro);
 }
