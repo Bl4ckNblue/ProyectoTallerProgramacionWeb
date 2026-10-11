@@ -18,7 +18,6 @@
     --Color-Footer: #272727;
 
     /* Bordes */
-    --Color-Bordes: #E8E8E8;
     --Color-Bordes-Oscuro: #DDDDDD;
 
     /* Tipografias */
@@ -116,6 +115,28 @@ h3 {
     align-self: flex-start;
 }
 
+.btn-subir {
+    position: fixed;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    bottom: 25px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--Color-Primario);
+    color: var(--Color-Texto-Claro);
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.btn-subir:hover {
+    transform: scale(1.12);
+    background-color: var(--Color-Primario-Fuerte);
+    color: var(--Color-Fondo-Claro);
+}
+
 /* Selectores ID */
 #cabecera {
     position: sticky;
@@ -148,8 +169,6 @@ h3 {
 
 #destinos {
     background-color: var(--Color-Texto-Claro);
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 
 #destinos p {
@@ -203,11 +222,6 @@ h3 {
     font-size: 35px;
 }
 
-#servicios {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
 #paquetes {
     background-color: var(--Color-Primario-Oscuro);
     padding: 100px 60px;
@@ -224,13 +238,6 @@ h3 {
 
 #testimonios {
     background-color: var(--Color-Fondo-Claro);
-    padding-top: 100px;
-    padding-bottom: 140px;
-}
-
-#equipo {
-    padding-top: 100px;
-    padding-bottom: 140px;
 }
 
 #turismo {
@@ -254,6 +261,14 @@ h3 {
     font-size: 12px;
 }
 
+#destinos,
+#servicios,
+#testimonios,
+#equipo {
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
 /* Selectores Class */
 
 /* Cabecera */
@@ -263,7 +278,6 @@ h3 {
     color: var(--Color-Fondo-Blanco);
     padding: 14px 20px;
     text-decoration: none;
-    gap: 50%;
     font-size: 12px;
     transition: 0.4s ease-in-out;
 }
@@ -443,12 +457,6 @@ h3 {
     width: fit-content;
 }
 
-.tarjeta img {
-    display: block;
-    /* Elimina el pequeño espacio fantasma debajo de la imagen */
-    width: 100%;
-}
-
 .tarjeta-txt {
     position: absolute;
     bottom: 0px;
@@ -504,11 +512,6 @@ h3 {
 .nosotros-photo {
     position: relative;
     width: fit-content;
-}
-
-.nosotros-photo img {
-    display: block;
-
 }
 
 .nosotros-txt {
@@ -584,11 +587,6 @@ h3 {
 
 .servicio-tarjeta {
     position: relative;
-    width: 100%;
-}
-
-.servicio-tarjeta img {
-    display: block;
     width: 100%;
 }
 
@@ -844,11 +842,10 @@ h3 {
 .form-control {
     width: 100%;
     font: inherit;
-    /* Hereda la fuente del body */
     padding: 10px 5px;
     background-color: var(--Color-Fondo-Claro);
     border: 0.5px solid var(--Color-Bordes-Oscuro);
-    border-bottom: 1px solid var(--color-texto-footer);
+    border-bottom: 1px solid var(--Color-Bordes-Oscuro);
 }
 
 .form-control:focus {
@@ -956,27 +953,4 @@ h3 {
     display: flex;
     flex-direction: row;
     gap: 25px;
-}
-
-/* scroll-up */
-.btn-subir {
-    position: fixed;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    bottom: 25px;
-    right: 25px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--Color-Primario);
-    color: var(--Color-Texto-Claro);
-    text-decoration: none;
-    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-}
-
-.btn-subir:hover {
-    transform: scale(1.12);
-    background-color: var(--Color-Primario-Fuerte);
-    color: var(--Color-Fondo-Claro);
 }
