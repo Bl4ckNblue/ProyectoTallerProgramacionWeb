@@ -150,10 +150,8 @@ h3 {
     position: relative;
     width: 100%;
     min-height: 600px;
-    /* Evita que el banner se haga muy bajito */
     height: 85vh;
-    /* Ocupa el 85% del alto de la pantalla */
-    overflow: hidden;
+
 }
 
 #banner span {
@@ -287,7 +285,7 @@ h3 {
 }
 
 .btn-nav-bar i {
-    padding-inline: 14px;
+    padding-left: 6px;
 }
 
 .nav-bar {
@@ -400,10 +398,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 12px 10px;
 }
 
 .tj-banner span {
@@ -509,9 +504,8 @@ h3 {
     flex: 1;
 }
 
-.nosotros-photo {
+.nosotros-video {
     position: relative;
-    width: fit-content;
 }
 
 .nosotros-txt {
@@ -544,7 +538,7 @@ h3 {
     font-weight: 400;
     letter-spacing: 0.1px;
     color: var(--Color-Texto-Secundario);
-    border-bottom: 1px solid #747474;
+    border-bottom: 1px solid var(--Color-Footer);
     padding-bottom: 30px;
 }
 
