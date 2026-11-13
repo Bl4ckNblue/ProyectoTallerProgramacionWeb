@@ -23,6 +23,7 @@
     /* Tipografias */
     --fuente1: "Poppins", sans-serif;
     --fuente2: "Satisfy", cursive;
+    --fuente-titulos: "Raleway", sans-serif;
 }
 
 * {
@@ -44,9 +45,9 @@ html {
 }
 
 h2 {
-    font-size: 57px;
-    font-family: var(--fuente1);
-    font-weight: 400;
+    font-size: 30px;
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
 }
 
 h3 {
@@ -429,6 +430,7 @@ h3 {
 .tarjetas-destinos-flex {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
 }
@@ -556,6 +558,7 @@ h3 {
 .servicios-flex {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
