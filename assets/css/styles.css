@@ -142,6 +142,7 @@ h3 {
     color: var(--Color-Texto-Claro);
     text-decoration: none;
     transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    z-index: 9999999;
 }
 
 .btn-subir:hover {
@@ -420,13 +421,13 @@ h3 {
     flex-direction: column;
     align-items: center;
     padding: 12px 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .tj-banner span {
     position: absolute;
     left: 15px;
     top: 6px;
-
 }
 
 .calificacion {
@@ -528,10 +529,17 @@ h3 {
     position: relative;
 }
 
+.nosotros-video video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
 .nosotros-txt {
     position: absolute;
-    top: 60px;
-    right: 30px;
+    top: 30px;
+    right: -25px;
     background-color: var(--Color-Primario);
     color: var(--Color-Titulos);
     padding: 18px 16px;
@@ -590,6 +598,8 @@ h3 {
 }
 
 .servicios-flex p {
+    width: 100%;
+    box-sizing: border-box;
     font-size: 12px;
     padding-bottom: 20px;
     color: var(--Color-Texto-Secundario);
@@ -600,6 +610,12 @@ h3 {
     flex: 1;
     min-width: 300px;
     max-width: 360px;
+}
+
+.servicios-flex article img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .servicio-tarjeta {
@@ -1201,43 +1217,35 @@ h3 {
     }
 
     .datos-flex {
-        /* Pasa de 4 columnas a 2x2 automáticamente */
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
 
     .nav-menu-toggle {
-        /* Poner visible el botón hamburguesa */
         display: block;
     }
 
     .nav-menu {
-        /* Posicionamiento del menú */
         position: absolute;
         top: 100%;
         right: 0;
 
-        /* Orientación */
         flex-direction: column;
 
-        /* Formato */
         width: 240px;
         background-color: var(--Color-Fondo-Blanco);
         padding: 1.5rem;
         box-shadow: 0px 8px 24px rgba(32, 54, 70, 0.25);
         border-radius: 10px;
 
-        /* Animación */
         transform: translateY(-12px);
         transition: all 0.4s ease-in-out;
 
-        /* Ocultar el menú */
         visibility: hidden;
         opacity: 0;
     }
 
     .nav-menu.active {
-        /* Poner visible el menú */
         visibility: visible;
         transform: translateY(0);
         opacity: 1;
@@ -1378,16 +1386,399 @@ h3 {
         font-size: 13px;
         text-align: center;
     }
+
+    .servicios-flex {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .servicios-flex article {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    #pie {
+        padding: 40px 20px;
+    }
+
+    .footer-flex1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer-flex2 {
+        justify-content: center;
+    }
+
+    .tbl-tarifas {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .tbl-tarifas th,
+    .tbl-tarifas td {
+        padding: 12px 6px;
+    }
+
+    .tbl-tarifas span {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+    }
+
+    .tbl-tarifas a {
+        width: 25px;
+        height: 25px;
+    }
+
 }
-
-
 
 /* Para pantallas de celulares de baja resolución  */
 @media (max-width:480px) {
     .container {
-        max-width: 90%;
+        max-width: 92%;
+        padding: 0 10px;
     }
+
+    .logo-ancho {
+        width: 140px;
+    }
+
+    .top-bar-flex {
+        justify-content: center;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .top-contacto {
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .page-title h1 {
+        font-size: 45px;
+    }
+
+    .txt-banner {
+        width: 85%;
+        left: 5%;
+        top: 15%;
+    }
+
+    .txt-banner h1 {
+        font-size: 32px;
+        padding-bottom: 15px;
+    }
+
+    .tj-banner {
+        padding: 8px 12px;
+
+    }
+
+    .tj-banner span {
+        font-size: 11px;
+        top: 4px;
+        left: 10px;
+    }
+
+    .calificacion strong {
+        font-size: 28px;
+    }
+
+    .calificacion p {
+        font-size: 9px;
+    }
+
+    #nosotros {
+        padding: 50px 0;
+    }
+
+    .nosotros-flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .nosotros-video {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .nosotros-txt {
+        top: 20px;
+        right: -15px;
+        padding: 12px 14px;
+        gap: 10px;
+    }
+
+    .nosotros-txt strong {
+        font-size: 24px;
+    }
+
+    .nosotros-txt span {
+        font-size: 9px;
+    }
+
+    .page-title {
+        height: auto;
+        min-height: 280px;
+        padding: 30px 0;
+    }
+
+    .page-title a {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        font-size: 13px;
+    }
+
+    .page-title h1 {
+        font-size: 38px;
+        line-height: 1.15;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .page-title p {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+
+    .page-title span {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .tarjetas-destinos-grid,
+    .tarjeta-equipo-grid,
+    .servicios-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .servicios-grid {
+        margin: 20px;
+        border-left: none;
+        border-top: none;
+    }
+
+    .servicios-grid article {
+        width: 100%;
+        max-width: 100%;
+        border-right: none;
+    }
+
+    #base {
+        padding: 40px 0;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .base-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .base-flex h2 {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    .base-flex span {
+        font-size: 11px;
+        padding-bottom: 5px;
+    }
+
+    .btn-nav-base {
+        display: inline-block;
+        width: 100%;
+        max-width: 250px;
+        padding: 12px 15px;
+        text-align: center;
+    }
+
+    .footer-flex1 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        align-items: start;
+    }
+
+    .footer-flex1 img {
+        width: 130px;
+    }
+
+    .slogan p {
+        font-size: 11px;
+    }
+
+    .col-flex {
+        font-size: 11px;
+    }
+
+    .col-flex a {
+        font-size: 11px;
+    }
+
+    .footer-flex2 p {
+        font-size: 10px;
+    }
+
+    .datos-flex {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 10px 5px;
+    }
+
+    .dato {
+        gap: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #datos strong {
+        font-size: 32px;
+        line-height: 1;
+    }
+
+    #datos span {
+        font-size: 11px;
+        line-height: 1.1;
+    }
+
+    .tbl-tarifas {
+        display: block;
+        overflow-x: auto;
+        font-size: 10px;
+    }
+
+    .tbl-tarifas th,
+    .tbl-tarifas td {
+        padding: 6px 3px;
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    .tbl-tarifas span,
+    .tbl-tarifas a {
+        width: 20px;
+        height: 20px;
+        font-size: 9px;
+    }
+
+    .info-titulo {
+        text-align: center;
+        padding: 5px 0 15px 0;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .info-titulo span {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .info-contacto {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .form-control {
+        font-size: 10px;
+        padding: 6px 4px;
+    }
+
+    .form-col-100 p {
+        font-size: 9px;
+    }
+
+    .form-submit {
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    .tjt-valores {
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
 }
 
 /* Para pantallas de celulares de baja resolución  */
-@media (max-width:360px) {}
+@media (max-width:360px) {
+    .container {
+        max-width: 94%;
+        padding: 0 5px;
+    }
+
+    #banner {
+        min-height: 400px;
+        height: 70vh;
+    }
+
+    .txt-banner {
+        top: 12%;
+        width: 90%;
+        left: 5%;
+    }
+
+    .txt-banner h1 {
+        font-size: 26px;
+        padding-bottom: 10px;
+        line-height: 1.1;
+    }
+
+    .txt-banner p {
+        font-size: 11px;
+        padding-top: 5px;
+        padding-bottom: 15px;
+    }
+
+    .banner-btn {
+        gap: 10px;
+    }
+
+    .banner-btn1,
+    .banner-btn2 {
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+
+    .tj-banner {
+        padding: 6px 8px;
+        right: 15px;
+    }
+
+    .tj-banner span {
+        font-size: 8px;
+    }
+
+    .calificacion strong {
+        font-size: 22px;
+    }
+
+    .calificacion p {
+        font-size: 8px;
+    }
+
+
+}
