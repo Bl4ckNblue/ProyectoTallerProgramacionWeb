@@ -1383,7 +1383,11 @@ h3 {
 
 
 /* Para pantallas de celulares de baja resolución  */
-@media (max-width:480px) {}
+@media (max-width:480px) {
+    .container {
+        max-width: 90%;
+    }
+}
 
 /* Para pantallas de celulares de baja resolución  */
 @media (max-width:360px) {}
