@@ -45,9 +45,9 @@ html {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 45px;
     font-family: var(--fuente-titulos);
-    font-weight: 700;
+    font-weight: 500;
 }
 
 h3 {
@@ -82,9 +82,12 @@ h3 {
 .titulo-flex {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     align-items: center;
     padding-bottom: 30px;
+    gap: 50px;
+    margin: 0px 50px;
 }
 
 .titulo-flex span {
@@ -96,6 +99,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    padding: 20px 20px;
 }
 
 .titulo-centrado span {
@@ -115,6 +119,14 @@ h3 {
     margin-top: 20px;
     align-self: flex-start;
 }
+
+.titulo-centrado small {
+    border-left: 3px solid var(--Color-Primario);
+    padding-left: 15px;
+    display: inline-block;
+    font-style: italic;
+}
+
 
 .btn-subir {
     position: fixed;
@@ -152,7 +164,6 @@ h3 {
     width: 100%;
     min-height: 600px;
     height: 85vh;
-
 }
 
 #banner span {
@@ -164,6 +175,12 @@ h3 {
     display: block;
     width: 100%;
     height: 100%;
+}
+
+#base {
+    min-height: 250px;
+    padding: 70px 0;
+    background-color: var(--Color-Texto-Navegacion);
 }
 
 #destinos {
@@ -193,7 +210,6 @@ h3 {
     padding: 20px 0px;
     font-size: 12px;
     font-weight: 600;
-
 }
 
 #datos {
@@ -201,14 +217,15 @@ h3 {
 }
 
 #datos strong {
-    font-size: 36px;
+    font-size: 45px;
     color: var(--Color-Primario);
 }
 
 #datos span {
     color: var(--Color-Texto-Claro);
     text-transform: uppercase;
-    font-size: 8px;
+    font-size: 14px;
+    line-height: 1.2;
     font-weight: 300;
 }
 
@@ -263,7 +280,9 @@ h3 {
 #destinos,
 #servicios,
 #testimonios,
-#equipo {
+#equipo,
+#servicios-html,
+#equipo-html {
     padding-top: 100px;
     padding-bottom: 120px;
 }
@@ -296,11 +315,13 @@ h3 {
     flex-direction: row;
     font-family: var(--fuente1);
     font-size: 14px;
+    position: relative;
 }
 
 .nav-menu {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 20px;
 }
 
@@ -322,13 +343,12 @@ h3 {
     transition: 0.3s ease-in-out;
 }
 
-.nav-menu a:hover::after {
+.nav-menu a:hover::after,
+.nav-menu a[aria-current="page"]::after {
     width: 100%;
 }
 
 /* Banner */
-
-
 .txt-banner {
     font-family: var(--fuente1);
     position: absolute;
@@ -433,6 +453,7 @@ h3 {
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
+    border-top: var(--Color-Primario-Oscuro);
 }
 
 .tarjetas-destinos-flex article {
@@ -440,18 +461,22 @@ h3 {
 }
 
 .titulo {
+    min-width: 280px;
     font-weight: 500;
+    flex: 1;
 }
 
 .subtitulo {
+    flex: 0 0 380px;
+    display: inline-block;
     font-family: var(--fuente1);
     color: var(--Color-Texto-Navegacion);
     font-size: 15px;
+    max-width: 100%;
 }
 
 .tarjeta {
     position: relative;
-    width: fit-content;
 }
 
 .tarjeta-txt {
@@ -467,35 +492,28 @@ h3 {
 /* Datos */
 
 .datos-flex {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
+    gap: 20px;
+    padding: 40px 20px;
 }
 
 .dato {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    border-right: 0.5px solid var(--Color-Texto-Secundario);
-    padding-right: 80px;
-    margin-right: 70px;
-}
-
-.dato1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     gap: 15px;
+    width: 100%;
+    justify-content: center;
 }
 
 /* Nosotros  */
 
 .nosotros-flex {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -580,6 +598,8 @@ h3 {
 
 .servicios-flex article {
     flex: 1;
+    min-width: 300px;
+    max-width: 360px;
 }
 
 .servicio-tarjeta {
@@ -648,6 +668,7 @@ h3 {
 /* Testimonios */
 .testimonios-flex {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -686,6 +707,7 @@ h3 {
 
 .tarjeta-equipo-flex {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 40px;
     justify-content: center;
@@ -711,6 +733,7 @@ h3 {
 
 .turismo-flex {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -738,6 +761,7 @@ h3 {
 
 .informacion-flex {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -868,10 +892,12 @@ h3 {
 .footer-flex1 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
     margin-bottom: 40px;
+    gap: 30px;
 }
 
 .footer-flex1 a {
@@ -891,9 +917,11 @@ h3 {
 
 .footer-flex2 {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
 }
 
 .footer-flex2 p {
@@ -928,10 +956,12 @@ h3 {
 /* Top-bar */
 .top-bar-flex {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     flex: 1;
     justify-content: space-between;
+    gap: 10px;
 
 }
 
@@ -951,3 +981,409 @@ h3 {
     flex-direction: row;
     gap: 25px;
 }
+
+.page-title {
+    background-color: var(--Color-Footer);
+    color: var(--Color-Fondo-Blanco);
+    height: 400px;
+    background-image:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.77) 0%, rgba(255, 255, 255, 0) 100%),
+        url("../img/banner2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.page-title a {
+    display: inline-block;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-decoration: none;
+    color: var(--Color-Texto-Secundario);
+}
+
+.page-title span {
+    display: block;
+    color: var(--Color-Primario);
+}
+
+.page-title h1 {
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.page-title p {
+    color: var(--Color-Texto-Secundario);
+    font-weight: 500;
+}
+
+.base-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.base-flex span {
+    display: inline-block;
+    color: var(--Color-Primario);
+    padding-bottom: 10px;
+}
+
+.base-flex h2 {
+    color: var(--Color-Fondo-Blanco);
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.btn-nav-base {
+    background-color: var(--Color-Primario);
+    color: var(--Color-Footer);
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 12px;
+    transition: 0.4s ease-in-out;
+    font-weight: 700;
+}
+
+.btn-nav-base:hover {
+    background-color: var(--Color-Primario-Fuerte);
+}
+
+.btn-nav-base i {
+    padding-left: 6px;
+}
+
+/* Botón hamburguesa */
+.nav-menu-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Destinos.html */
+.tarjetas-destinos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-content: center;
+    border-top: 1px solid var(--Color-Primario-Oscuro);
+    padding-top: 30px;
+}
+
+.tarjetas-destinos-grid article {
+    max-width: fit-content;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+}
+
+.destinos-precio {
+    padding: 20px;
+}
+
+.destinos-precio h3 {
+    border-bottom: 1px solid var(--Color-Texto-Secundario);
+    padding: 20px 0px;
+}
+
+.destinos-precio small {
+    color: var(--Color-Texto-Principal);
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.destinos-precio span {
+    color: var(--Color-Primario);
+}
+
+.detalles-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Color-Texto-Secundario);
+    padding: 10px 0px;
+}
+
+.tjt-valores {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 100px 40px;
+}
+
+.tjt-valores article {
+    flex: 1;
+    background-color: var(--Color-Fondo-Claro);
+    border-top: 3px solid var(--Color-Primario);
+    padding: 40px 30px;
+}
+
+.tjt-valores h3 {
+    font-size: 20px;
+    padding: 15px 0px;
+}
+
+.tjt-valores p {
+    font-size: 10px;
+    padding: 15px 0px;
+    color: var(--Color-Texto-Navegacion);
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--Color-Bordes-Oscuro);
+    border-left: 1px solid var(--Color-Bordes-Oscuro);
+    margin: 40px 80px;
+
+}
+
+.servicios-grid article {
+    border-right: 1px solid var(--Color-Bordes-Oscuro);
+    border-bottom: 1px solid var(--Color-Bordes-Oscuro);
+    padding: 45px 40px;
+    background-color: var(--Color-Fondo-Blanco);
+    transition: background-color 0.3s ease;
+}
+
+.servicios-grid h3 {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--Color-Titulos);
+    margin-bottom: 15px;
+}
+
+.servicios-grid p {
+    font-size: 11px;
+    color: var(--Color-Texto-Secundario);
+    line-height: 1.6;
+}
+
+.tarjeta-equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tarjeta-equipo-grid article {
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.tarjeta-equipo-grid span {
+    display: block;
+    color: var(--Color-Primario);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    padding: 15px 0px;
+}
+
+.tarjeta-equipo-grid h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.tarjeta-equipo-grid p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.6;
+    padding: 10px 0px;
+    color: var(--Color-Texto-Navegacion);
+}
+
+/* Para pantallas de Laptops */
+@media (max-width:1200px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .datos-flex {
+        /* Pasa de 4 columnas a 2x2 automáticamente */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .nav-menu-toggle {
+        /* Poner visible el botón hamburguesa */
+        display: block;
+    }
+
+    .nav-menu {
+        /* Posicionamiento del menú */
+        position: absolute;
+        top: 100%;
+        right: 0;
+
+        /* Orientación */
+        flex-direction: column;
+
+        /* Formato */
+        width: 240px;
+        background-color: var(--Color-Fondo-Blanco);
+        padding: 1.5rem;
+        box-shadow: 0px 8px 24px rgba(32, 54, 70, 0.25);
+        border-radius: 10px;
+
+        /* Animación */
+        transform: translateY(-12px);
+        transition: all 0.4s ease-in-out;
+
+        /* Ocultar el menú */
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .nav-menu.active {
+        /* Poner visible el menú */
+        visibility: visible;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .nav-menu a {
+        display: block;
+        width: 100%;
+        border-radius: 7px;
+        padding: 14px;
+        text-align: center;
+    }
+
+    .txt-banner {
+        width: 55%;
+        left: 6%;
+    }
+
+    .txt-banner h1 {
+        font-size: 60px;
+    }
+
+    .titulo-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0px 10px;
+        gap: 15px;
+        padding-bottom: 20px;
+    }
+
+    .titulo,
+    .subtitulo {
+        text-align: center;
+        flex: 1;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Para pantallas de tablets  */
+@media (max-width:992px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .btn-nav-bar {
+        display: none;
+    }
+
+    .txt-banner h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .tarjetas-destinos-grid,
+    .tarjeta-equipo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .nosotros-flex,
+    .turismo-flex,
+    .informacion-flex {
+        flex-direction: column;
+    }
+
+    .nosotros-txt {
+        right: -80px;
+    }
+
+    .turismo-video iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    #paquetes {
+        padding: 90px 15px;
+    }
+
+    .tbl-tarifas td {
+        font-size: 12px;
+        padding: 50px 5px;
+    }
+
+    .footer-flex2 p {
+        font-size: 12px;
+    }
+}
+
+/* Para pantallas de celulares de alta resolución  */
+@media (max-width:768px) {
+    .container {
+        max-width: 86%;
+    }
+
+    #banner {
+        width: 100%;
+        max-height: 500px;
+        height: 85vh;
+    }
+
+    .txt-banner {
+        top: 20%;
+        left: 8%;
+        max-width: 380px;
+    }
+
+    .txt-banner h1 {
+        font-size: 40px;
+    }
+
+    .txt-banner p {
+        font-size: 13px;
+    }
+
+    .banner-btn {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 15px;
+    }
+
+    .banner-btn1 {
+        margin-left: 10px;
+    }
+
+    .banner-btn1,
+    .banner-btn2 {
+        padding: 10px 15px;
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+
+
+/* Para pantallas de celulares de baja resolución  */
+@media (max-width:480px) {}
+
+/* Para pantallas de celulares de baja resolución  */
+@media (max-width:360px) {}

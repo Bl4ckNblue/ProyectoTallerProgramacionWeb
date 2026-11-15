@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="shortcut icon" href="assets/img/fav-icon-viaja.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/fav-icon-viaja.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -43,7 +43,7 @@
                 </div>
                 <!-- Redes Sociales -->
                 <div class="top-rs">
-                    <a target="_blank" href="https://facebook.com/utp.peru">
+                    <a target="_blank" href="https://facebook.com">
                         <i class="fa-brands fa-facebook fa-xl"></i>
                     </a>
                     <a target="_blank" href="https://instagram.com">
@@ -70,13 +70,18 @@
                     </a>
                 </div>
 
+                <!-- Botón hamburguesa (para pantallas móviles) -->
+                <div class="nav-menu-toggle">
+                    <i class="fa-solid fa-bars" title="Menú"></i>
+                </div>
+
                 <!-- Menu de navegacion -->
                 <nav class="nav-menu">
-                    <a href="#cabecera">Inicio</a>
-                    <a href="#destinos">Destinos</a>
-                    <a href="#nosotros">Nosotros</a>
-                    <a href="#servicios">Servicios</a>
-                    <a href="#equipo">Equipo</a>
+                    <a href="/index.html" aria-current="page">Inicio</a>
+                    <a href="/destinos.html">Destinos</a>
+                    <a href="/nosotros.html">Nosotros</a>
+                    <a href="/servicios.html">Servicios</a>
+                    <a href="/equipo.html">Equipo</a>
                 </nav>
 
                 <!-- Boton Planifica -->
@@ -159,7 +164,7 @@
                             </div>
                         </div>
                         <div>
-                            <h3>Huaraz y Cordillera Blanca</h3>
+                            <h3>Huaraz y Cordillera </h3>
                             <p>Descubre picos andinos, lagunas turquesas y rutas de trekking en uno de los paisajes más impactantes del Perú.</p>
                             <a href="#informacion">Ver experiencia <i class="fa-solid fa-arrow-right-long fa-rotate-by" style="--fa-rotate-angle: 320deg;"></i>
                             </a>
@@ -215,7 +220,7 @@
                         <strong>15k</strong>
                         <span>Viajeros felices</span>
                     </div>
-                    <div class="dato1">
+                    <div class="dato">
                         <strong>98%</strong>
                         <span>Clientes <br>satisfechos</span>
                     </div>
@@ -269,7 +274,7 @@
         </section>
 
         <!-- Servicios -->
-        <section id="servicios">
+        <section id="servicios-html">
             <!-- Ajustar ancho y centrar -->
             <div class="container">
                 <!-- Titulo -->
@@ -588,8 +593,8 @@
                 </div>
                 <div class="col-flex">
                     <span>Siguenos</span>
-                    <a target="_blank" href="https://www.facebook.com/PhillipChuJoy"><i class="fab fa-facebook fa-lg"></i> </a>
-                    <a target="_blank" href="https://www.instagram.com/phillipchujoi/"><i class="fab fa-instagram fa-lg"></i> </a>
+                    <a target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook fa-lg"></i> </a>
+                    <a target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram fa-lg"></i> </a>
                     <a target="_blank" href="https://wa.me/51999888761?text=Hola%2C%20quiero%20reservar%20un%20viaje"><i class="fab fa-whatsapp fa-lg"></i> </a>
                 </div>
                 <div class="col-flex">
@@ -611,6 +616,9 @@
 
     <!-- btn-scrollup -->
     <a class="btn-subir" href="#top-bar"><i class="fa-solid fa-arrow-up-long fa-rotate-360"></i></a>
+
+    <!-- Enlazar el HTML con la librería principal de código javascript -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

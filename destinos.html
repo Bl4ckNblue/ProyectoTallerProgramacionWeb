@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Conjunto de caracteres del idioma español -->
+    <meta charset="UTF-8">
+
+    <!-- Habilita el diseño web CSS responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la pestaña en el navegador -->
+    <title>Viaja Peru - Agencia de Viajes y Tours</title>
+
+    <!-- Descripción breve del sitio, usada por los buscadores -->
+    <meta name="description" content="Agencia de viajes Viaja Peru: destinos destacados, tours y experiencias inolvidables por todo el país.">
+
+    <!-- Enlazar el HTML con la hoja de estilos CSS externa -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Enlazar el HTML con fuentes deGoogle Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="assets/img/fav-icon-viaja.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Top-bar -->
+    <header id="top-bar">
+        <div class="container">
+            <!-- Flexbox del Top-bar -->
+            <div class="top-bar-flex">
+                <!-- Contactos -->
+                <div class="top-contacto">
+                    <!-- Telefono -->
+                    <a href="tel:+51999888761">
+                        <i class="fa-solid fa-phone"></i>+51 999 888 761
+                    </a>
+                    <!-- Correo -->
+                    <a href="mailto:viajesperu@gmail.com">viajesperu@gmail.com</a>
+                </div>
+                <!-- Redes Sociales -->
+                <div class="top-rs">
+                    <a target="_blank" href="https://facebook.com">
+                        <i class="fa-brands fa-facebook fa-xl"></i>
+                    </a>
+                    <a target="_blank" href="https://instagram.com">
+                        <i class="fa-brands fa-instagram fa-xl"></i>
+                    </a>
+                    <a target="_blank" href="https://api.whatsapp.com/send/?phone=51905435005&text=Hola, necesito información sobre sus servicios">
+                        <i class="fa-brands fa-whatsapp fa-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Cabecera -->
+    <header id="cabecera" class="padding-xs">
+        <!-- Ajustar el ancho del contenido y centrar -->
+        <div class="container">
+            <!-- Barra de navegación (navbar) / Alineamiento flexible de los elementos -->
+            <div class="nav-bar">
+                <!-- Logo -->
+                <div class="logo-ancho">
+                    <a href="index.html" title="logo_viajaperu">
+                        <img class="img-fluid" src="assets/img/logo-viaja.jpg" alt="Logo Viaja Peru">
+                    </a>
+                </div>
+
+                <!-- Botón hamburguesa (para pantallas móviles) -->
+                <div class="nav-menu-toggle">
+                    <i class="fa-solid fa-bars" title="Menú"></i>
+                </div>
+
+                <!-- Menu de navegacion -->
+                <nav class="nav-menu">
+                    <a href="/index.html">Inicio</a>
+                    <a href="/destinos.html" aria-current="page">Destinos</a>
+                    <a href="/nosotros.html">Nosotros</a>
+                    <a href="/servicios.html">Servicios</a>
+                    <a href="/equipo.html">Equipo</a>
+                </nav>
+
+                <!-- Boton Planifica -->
+                <a class="btn-nav-bar" href="/index.html#informacion">Planifica tu viaje
+                    <i class="fa-solid fa-arrow-right-long " style="color: rgb(255, 255, 255);"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección de título de página -->
+        <section class="page-title">
+            <div class="container">
+                <a href="index.html">Inicio</a>/ Destinos <br>
+                <span>— Explora Destinos</span>
+                <h1>Destinos</h1>
+                <p>Rutas memorables entre ciudades vivas, montañas sagradas, costa y selva</p>
+
+            </div>
+        </section>
+
+        <!-- Seccion destinos de viaje -->
+
+        <!-- Destinos -->
+        <section id="destinos">
+            <!-- Ajuste Ancho y Centrar -->
+            <div class="container">
+                <!-- Cabecera Destinos -->
+                <div class="titulo-flex">
+                    <!-- Titulo Destinos-->
+                    <div class="titulo">
+                        <div>
+                            <span>— Encuentra tu próxima historia</span>
+                            <h2>Experiencias elegidas <br>con mirada local</h2>
+                        </div>
+                    </div>
+                    <div class="subtitulo">
+                        <small>Cada propuesta combina los imperdibles del destino con rincones menos conocidos, tiempos tranquilos y acompañamiento experto.</small>
+                    </div>
+                </div>
+
+                <!-- Tarjetas Destinos -->
+                <div class="tarjetas-destinos-grid">
+                    <!-- Destino Cuzco -->
+                    <article>
+                        <div class="tarjeta">
+                            <img src="assets/img/machu-picchu.jpg" alt="Ruinas de Machu Picchu rodeadas de montañas en Cusco">
+                            <div class="tarjeta-txt">
+                                <span>Historia</span>
+                            </div>
+                        </div>
+                        <div class="destinos-precio">
+                            <span>Cusco</span>
+                            <h3>Cusco y Machu Picchu</h3>
+                            <div class="detalles-flex">
+                                <small>5 dias</small>
+                                <strong><small>desde </small>S/1,840</strong>
+                            </div>
+                            <a href="/index.html#informacion">Ver experiencia <i class="fa-solid fa-arrow-right-long fa-rotate-by" style="--fa-rotate-angle: 320deg;"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Destino Huaraz -->
+                    <article>
+                        <div class="tarjeta">
+                            <img src="assets/img/huaraz.jpg" alt="Laguna turquesa y picos nevados de la Cordillera Blanca en Huaraz">
+                            <div class="tarjeta-txt">
+                                <span>Aventura</span>
+                            </div>
+                        </div>
+                        <div class="destinos-precio">
+                            <span>Ancash</span>
+                            <h3>Huaraz y Cordillera</h3>
+                            <div class="detalles-flex">
+                                <small>6 dias</small>
+                                <strong><small>desde </small>S/1,690</strong>
+                            </div>
+                            <a href="/index.html#informacion">Ver experiencia <i class="fa-solid fa-arrow-right-long fa-rotate-by" style="--fa-rotate-angle: 320deg;"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <!-- Destino Paracas -->
+                    <article>
+                        <div class="tarjeta">
+                            <img src="assets/img/paracas.jpg" alt="Reserva Nacional de Paracas donde el desierto se encuentra con el océano">
+                            <div class="tarjeta-txt">
+                                <span>Naturaleza</span>
+                            </div>
+                        </div>
+                        <div class="destinos-precio">
+                            <span>Ica</span>
+                            <h3>Paracas e Islas Ballestas</h3>
+                            <div class="detalles-flex">
+                                <small>3 dias</small>
+                                <strong><small>desde </small>S/980</strong>
+                            </div>
+                            <a href="/index.html#informacion">Ver experiencia <i class="fa-solid fa-arrow-right-long fa-rotate-by" style="--fa-rotate-angle: 320deg;"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <!-- Destino Amazonas -->
+                    <article>
+                        <div class="tarjeta">
+                            <img src="assets/img/amazonas.jpg" alt="Caída de agua de la catarata Gocta en la Amazonía">
+                            <div class="tarjeta-txt">
+                                <span>Descubrimiento</span>
+                            </div>
+                        </div>
+                        <div class="destinos-precio">
+                            <span>Amazonas</span>
+                            <h3>Amazonas y Gocta</h3>
+                            <div class="detalles-flex">
+                                <small>5 dias</small>
+                                <strong><small>desde </small>S/1,520</strong>
+                            </div>
+                            <a href="/index.html#informacion">Ver experiencia <i class="fa-solid fa-arrow-right-long fa-rotate-by" style="--fa-rotate-angle: 320deg;"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <!-- Destino Arequipa -->
+                    <article>
+                        <div class="tarjeta">
+                            <img src="assets/img/amazonas.jpg" alt="Caída de agua de la catarata Gocta en la Amazonía">
+                            <div class="tarjeta-txt">
+                                <span>Descubrimiento</span>
+                            </div>
+                        </div>
+                        <div class="destinos-precio">
+                            <span>Arequipa</span>
+                            <h3>Arequipa y el Colca</h3>
+                            <div class="detalles-flex">
+                                <small>4 dias</small>
+                                <strong><small>desde </small>S/1,280</strong>
+                            </div>
+                            <a href="/index.html#informacion">Ver experiencia <i class="fa-solid fa-arrow-right-long fa-rotate-by" style="--fa-rotate-angle: 320deg;"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <!-- Destino Valle Sagrado -->
+                    <article>
+                        <div class="tarjeta">
+                            <img src="assets/img/amazonas.jpg" alt="Caída de agua de la catarata Gocta en la Amazonía">
+                            <div class="tarjeta-txt">
+                                <span>Descubrimiento</span>
+                            </div>
+                        </div>
+                        <div class="destinos-precio">
+                            <span>Cusco</span>
+                            <h3>Valle Sagrado</h3>
+                            <div class="detalles-flex">
+                                <small>4 dias</small>
+                                <strong><small>desde </small>S/1,390</strong>
+                            </div>
+                            <a href="/index.html#informacion">Ver experiencia <i class="fa-solid fa-arrow-right-long fa-rotate-by" style="--fa-rotate-angle: 320deg;"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seccion Base Pagina -->
+        <section class="padding-xs" id="base">
+            <div class="container">
+                <div class="base-flex">
+                    <div>
+                        <span>— Tu ruta a tu manera</span>
+                        <h2>¿No encuentras el viaje que imaginas?</h2>
+                    </div>
+                    <div>
+                        <a class="btn-nav-base" href="/index.html#informacion">Diseñar mi viaje
+                            <i class="fa-solid fa-arrow-right-long " style="color: rgb(0, 0, 0);"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer id="pie" class="padding-xs">
+        <!-- Ajustar ancho y centrar -->
+        <section class="container">
+            <!-- Superior Flex-->
+            <div class="footer-flex1">
+                <div>
+                    <a href="index.html">
+                        <img src="assets/img/image.png" alt="Logo ViajaPeru">
+                    </a>
+                </div>
+                <div class="slogan">
+                    <p>Experiencias auténticas, <br>recuerdos para siempre.</p>
+                </div>
+                <div class="col-flex">
+                    <span>Siguenos</span>
+                    <a target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook fa-lg"></i> </a>
+                    <a target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram fa-lg"></i> </a>
+                    <a target="_blank" href="https://wa.me/51999888761?text=Hola%2C%20quiero%20reservar%20un%20viaje"><i class="fab fa-whatsapp fa-lg"></i> </a>
+                </div>
+                <div class="col-flex">
+                    <span>Explora</span>
+                    <a href="#destinos">Destinos</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#servicios">Servicios</a>
+                </div>
+            </div>
+
+            <hr class="linea">
+            <!-- Inferior Flex-->
+            <div class="footer-flex2">
+                <p>&copy; 2026 - ViajaPerú. Todos los derechos reservados.</p>
+                <p>Turismo responsable · Hecho con calma en Perú</p>
+            </div>
+        </section>
+    </footer>
+
+    <!-- btn-scrollup -->
+    <a class="btn-subir" href="#top-bar"><i class="fa-solid fa-arrow-up-long fa-rotate-360"></i></a>
+
+    <!-- Enlazar el HTML con la librería principal de código javascript -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
