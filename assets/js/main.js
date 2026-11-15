@@ -14,7 +14,7 @@ botonMenu.addEventListener("click", function () {
 const botonArriba = document.querySelector(".btn-subir");
 // Función para controlar la visibilidad de botón 
 function mostrarBotonArriba() {
-    if (window.scrollY <= 300) {
+    if (window.scrollY <= 400) {
         botonArriba.hidden = true; // Oculta el botón
     } else {
         botonArriba.hidden = false;  // Muestra botón
